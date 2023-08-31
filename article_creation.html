@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Creation Form</title>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <nav class="wrapper__inner">
+        <div class="nav__navigation">
+          <ul>
+            <li id="main-nav"><a href="./index.html">khusanyusupov.com</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./email_form.html">Contact Me</a></li>
+            <li><a href="./article_creation.html">Create new Blog</a></li>
+          </ul>
+        </div>
+        <div class="social_links">
+          <ul>
+            <li>
+              <a href="https://github.com/inforgstr/"
+                ><img src="./img/icons/github.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/khusan-yusupov/">
+                <img src="./img/icons/linkedin.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/icons/patreon.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/icons/rss.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Post new Article</h1>
+      </header>
+      <div class="create_form">
+        <form action="./index.html" method="get">
+          <div class="input">
+            <input
+              id="title"
+              name="title"
+              type="text"
+              placeholder="Blog's title"
+              required
+            />
+          </div>
+          <div class="input">
+            <textarea
+              name="content"
+              id="content"
+              cols="50"
+              rows="10"
+              placeholder="Blog's content"
+            ></textarea>
+          </div>
+          <div class="input">
+            <input
+              id="author"
+              name="author"
+              type="text"
+              placeholder="Posted by"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="tag">Tag</label>
+            <div class="input__inner">
+              <input type="text" id="tag" />
+              <div class="add-tag">Add</div>
+            </div>
+            <div class="tag__inner"></div>
+          </div>
+          <div class="input">
+            <label for="title">Posted at</label>
+            <input id="date" name="date" type="datetime-local" required />
+          </div>
+          <div class="btn-submit">
+            <button>Post article</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="wrapper">
+      <footer>
+        <div class="footer-content">
+          &copy; 2023 by Khusan Yusupov. All rights reserved.
+          <a id="email-form" href="./email_form.html">Questions?</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/form.js"></script>
+  </body>
+</html>

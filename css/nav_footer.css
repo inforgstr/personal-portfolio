@@ -1,0 +1,62 @@
+.wrapper,
+nav.wrapper__inner {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+nav.wrapper__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav__navigation ul {
+  display: flex;
+  gap: 15px;
+}
+
+.nav__navigation li a:hover {
+  color: black;
+}
+
+.social_links ul {
+  display: flex;
+  gap: 5px;
+}
+
+.social_links ul img {
+  opacity: 0.75;
+}
+
+.social_links ul img:hover {
+  opacity: 1;
+}
+
+#main-nav a {
+  font-size: 19px;
+  color: rgb(70, 70, 70);
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: #eeeeff;
+  box-shadow: 1px 1px 13px rgb(192, 192, 192);
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+  border-top: 1px solid rgb(196, 196, 196);
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding: 18px 0;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+#email-form {
+  color: blue;
+}

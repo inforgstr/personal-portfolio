@@ -1,0 +1,177 @@
+.article-tags > div {
+  padding: 7px;
+  border: 1px solid rgb(195, 111, 255);
+  width: max-content;
+  border-radius: 5px;
+  color: rgb(195, 111, 255);
+  font-size: 13px;
+}
+
+.article-tags {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section__about {
+  margin-top: 50px;
+  border-radius: 7px;
+  border: 1px solid rgb(194, 194, 194);
+  width: 400px;
+}
+
+.section__about .header {
+  border-start-start-radius: 7px;
+  border-start-end-radius: 7px;
+  padding: 12px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #eeefff;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.about__content {
+  margin-top: 20px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about_footer {
+  margin-top: 5px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.email-input input {
+  height: 50px;
+}
+
+.main-header {
+  color: gray;
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+main .content {
+  font-weight: 500;
+  color: #616161;
+  max-width: 1000px;
+}
+
+.share_point {
+  margin-bottom: 356px;
+  margin-top: 70px;
+  border-radius: 7px;
+  border: 1px solid rgb(177, 177, 177);
+  padding: 20px;
+}
+
+.share_point h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.share_point ul {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.share_point ul a {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.share_point ul a:hover {
+  color: black !important;
+}
+
+.share_point ul li:first-child a {
+  background-color: #ff712f;
+  color: white;
+}
+
+.share_point ul svg {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  margin-right: 0.4em;
+  vertical-align: top;
+  fill: white;
+}
+
+.share_point ul li:nth-child(2) a {
+  background-color: #809eff;
+  color: white;
+}
+
+.share_point ul li:first-child span {
+  font-size: 20px;
+}
+
+.share_point ul li:nth-child(3) a {
+  background-color: #7cb5ff;
+  color: white;
+}
+
+.share_point ul li:nth-child(4) a {
+  color: white;
+  background-color: rgb(94, 116, 230);
+}
+
+.share_point ul li:last-child a {
+  color: white;
+  background-color: rgb(255, 109, 109);
+}
+
+.hidden {
+  display: none;
+}
+
+nav.pagination {
+  position: relative;
+  margin-top: 150px;
+}
+
+.pagination__inner {
+  display: flex;
+  width: calc(100% - 2em);
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.pagination-number,
+.pagination-button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0.25rem 0.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background-color: #fff;
+}
+
+.pagination-number .active {
+  color: #fff;
+  background-color: #eeefff;
+}

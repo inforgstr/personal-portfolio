@@ -1,0 +1,196 @@
+.container {
+  padding-top: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  margin-top: 30px;
+  text-align: center;
+  border-start-start-radius: 8px;
+  border-start-end-radius: 8px;
+  background-color: rgb(99, 99, 99);
+  padding: 20px;
+}
+
+header h1 {
+  color: rgb(233, 233, 233);
+  font-size: 40px;
+}
+
+.create_form {
+  width: 600px;
+  margin: 100px auto 40px;
+}
+
+form input {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+form input:focus {
+  border: 0;
+  background-color: rgb(240, 240, 240);
+}
+
+label {
+  font-weight: 500;
+}
+
+form textarea {
+  height: 200px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+form textarea:focus {
+  border: 0;
+  background-color: rgb(238, 238, 238);
+}
+
+.btn-submit button,
+.btn-email-submit button {
+  margin-top: 20px;
+  border: 1px solid green;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, border 0.5s ease;
+}
+
+.btn-submit button:hover {
+  background-color: rgb(45, 255, 45);
+  border: 1px solid green;
+}
+
+.btn-submit,
+.btn-email-submit {
+  text-align: center;
+}
+
+.btn-email-submit button {
+  border: 1px solid rgb(255, 66, 66);
+  color: rgb(255, 66, 66);
+}
+
+.btn-email-submit button:hover {
+  color: white;
+  background-color: rgb(255, 66, 66);
+}
+
+.article-item {
+  margin: 30px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.article-item > div {
+  margin-top: 20px;
+}
+
+.article-item a {
+  text-decoration: none;
+  color: rgb(155, 155, 155);
+  margin-top: 20px;
+  display: block;
+  width: max-content;
+  transition: color 0.5s ease, background-color 0.5s ease;
+  align-self: end;
+}
+
+.article-item a:hover {
+  text-decoration: underline;
+}
+
+.article-author {
+  padding: 5px 15px;
+  border-radius: 7px;
+  border: 2px solid rgb(205, 255, 182);
+  width: max-content;
+}
+
+.create_form input::placeholder {
+  color: rgb(126, 126, 126);
+  user-select: none;
+}
+
+.create_form input:focus input::placeholder {
+  color: white;
+}
+
+.article-item .article-content {
+  color: rgb(85, 85, 85);
+  font-weight: 500;
+}
+
+.tag__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.s-tag {
+  width: max-content;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  padding: 8px;
+  color: blue;
+  border-radius: 5px;
+  border: 1px solid rgb(132, 132, 255);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.s-tag:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #63a7ff;
+}
+
+.input__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+.input__inner input {
+  width: 90%;
+}
+
+.input__inner .add-tag {
+  user-select: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid green;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.input__inner .add-tag:hover {
+  background-color: green;
+  color: white;
+}
