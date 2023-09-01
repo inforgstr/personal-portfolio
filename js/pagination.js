@@ -75,18 +75,25 @@ const setCurrentPage = (pageNum) => {
   });
 };
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 window.addEventListener("load", () => {
   getPaginationNumbers();
   setCurrentPage(1);
 
   prevButton.addEventListener("click", () => {
     setCurrentPage(currentPage - 1);
-    scroll(0, 0);
+    scrollToTop();
   });
 
   nextButton.addEventListener("click", () => {
     setCurrentPage(currentPage + 1);
-    scroll(0, 0);
+    scrollToTop();
   });
 
   document.querySelectorAll(".pagination-number").forEach((button) => {
@@ -95,6 +102,7 @@ window.addEventListener("load", () => {
     if (pageIndex) {
       button.addEventListener("click", () => {
         setCurrentPage(pageIndex);
+        scrollToTop();
       });
     }
   });

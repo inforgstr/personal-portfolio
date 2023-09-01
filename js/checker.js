@@ -10,11 +10,9 @@ if (url.has("title")) {
     <a href="#">Continue reading this post...</a>
   `;
   const BlogEl = document.querySelector(".blogs-side article");
-  const firstBlogEl = BlogEl.children;
 
   const articleEl = document.createElement("article");
   articleEl.className = "article-item";
   articleEl.innerHTML = article;
   BlogEl.insertAdjacentElement("beforebegin", articleEl);
-  // BlogEl.insertBefore(firstBlogEl, articleEl);
 }
