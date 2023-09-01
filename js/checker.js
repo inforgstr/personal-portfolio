@@ -8,10 +8,13 @@ if (url.has("title")) {
     <div class="article-author">Posted by </div>
     <div class="article-content"></div>
     <a href="#">Continue reading this post...</a>
-`;
+  `;
+  const BlogEl = document.querySelector(".blogs-side article");
+  const firstBlogEl = BlogEl.children;
 
   const articleEl = document.createElement("article");
   articleEl.className = "article-item";
   articleEl.innerHTML = article;
-  document.querySelector(".blogs-side").append(articleEl);
+  BlogEl.insertAdjacentElement("beforebegin", articleEl);
+  // BlogEl.insertBefore(firstBlogEl, articleEl);
 }

@@ -13,7 +13,7 @@ addBtn.addEventListener("click", () => {
   let tagElements = document.querySelectorAll(".s-tag");
   tagElements.forEach((el) => {
     el.addEventListener("click", function () {
-      this.style.display = "none";
+      el.remove();
     });
   });
 });

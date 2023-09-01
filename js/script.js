@@ -28,10 +28,9 @@ function normalizeDate(date) {
 }
 
 if (data.get("title")) {
-  let articleItems = document.querySelectorAll("article.article-item");
-  let lastArticle = articleItems[articleItems.length - 1];
+  let articleItems = document.querySelector("article.article-item");
 
-  let articleItem = lastArticle.children;
+  let articleItem = articleItems.children;
   articleItem[0].innerHTML += cleanUpField(data.get("title"));
   data.getAll("tag").forEach((tag) => {
     if (tag) {

@@ -81,10 +81,12 @@ window.addEventListener("load", () => {
 
   prevButton.addEventListener("click", () => {
     setCurrentPage(currentPage - 1);
+    scroll(0, 0);
   });
 
   nextButton.addEventListener("click", () => {
     setCurrentPage(currentPage + 1);
+    scroll(0, 0);
   });
 
   document.querySelectorAll(".pagination-number").forEach((button) => {
