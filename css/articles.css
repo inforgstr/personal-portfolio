@@ -164,11 +164,12 @@ nav.pagination {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 0.2rem;
+  transition: background-color .5s ease-in;
 }
 
 .pagination-number:hover,
 .pagination-button:not(.disabled):hover {
-  background-color: #fff;
+  background-color: #eeeeee;
 }
 
 .pagination-number.active {

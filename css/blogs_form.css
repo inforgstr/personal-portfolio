@@ -155,11 +155,11 @@ form textarea:focus {
 
 .s-tag {
   text-align: center;
-  width: 100px;
+  width: 150px;
   margin-bottom: 20px;
   margin-right: 20px;
   display: inline-block;
-  padding: 8px;
+  padding: 8px 10px;
   color: blue;
   border-radius: 5px;
   border: 1px solid rgb(132, 132, 255);
